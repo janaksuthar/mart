@@ -19,4 +19,4 @@ if st.button('Predict Sales'):
     # Prepare the input features as a DataFrame to keep feature names
     input_data = pd.DataFrame([[tv, radio, newspaper]], columns=['TV', 'Radio', 'Newspaper'])
     prediction = model.predict(input_data)[0]
-    st.success(f'Predicted Sales: {prediction:.2f} units')
+    st.success(f'Predicted Sales: {prediction:.2f} M')
